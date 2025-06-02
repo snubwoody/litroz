@@ -2,3 +2,7 @@
 @import "./colors.css";
 @import "./radius.css";
 @import "./text.css";
+
+@theme{
+    --spacing: 1px;
+}
