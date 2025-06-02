@@ -46,6 +46,20 @@
     *{
         @apply font-regular text-body-medium;
     }
+
+	h1{ @apply text-heading-1; }
+	h2{ @apply text-heading-2; }
+	h3{ @apply text-heading-3; }
+	h4{ @apply text-heading-4; }
+	h5{ @apply text-heading-5; }
+
+	h1,h2,h3,h4,h5{
+		color: var(--color-text-heading);
+	}
+
+    p{
+        color: var(--color-text-body);
+    }
 }
 
 body{
