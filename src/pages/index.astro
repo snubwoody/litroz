@@ -1,7 +1,75 @@
 ---
+import CoreValues from "../components/home/core-values.astro"
+import Schools from "../components/home/schools.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    <p>Excellence through education</p>    
+    <img
+        class="w-full aspect-video"
+        src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt=""
+    >
+    <section class="w-full flex flex-col items-center justify-center py-96 px-64 gap-24">
+        <h2 class="text-display-2 font-display text-green-700">
+            Excellence though education
+        </h2>
+        <p class="max-w-[75ch] text-center text-text-body">
+            As a primary school, we cater to children in their formative years, providing a safe, inclusive, and stimulating environment where curiosity, creativity, and confidence are cultivated every day. Our dedicated team of teachers and support staff work closely with students and parents to ensure that each child receives personalized attention and the support they need to thrive academically, socially, and emotionally.
+        </p>
+    </section> 
+    <section class="py-96 px-64">
+        <ul class="space-y-88">
+            <li class="flex items-center gap-156">
+                <div>
+                    <h2>
+                        Our Vision
+                    </h2>
+                    <p>
+                        We believe in building innovative solutions that empower people and communities. Our vision is to bridge the gap between technology and everyday life by creating experiences that are intuitive, impactful, and sustainable.
+                    </p>
+                </div>
+                <img
+                    class="w-full aspect-[4/3] object-cover"
+                    src="https://cdn.pixabay.com/photo/2022/03/04/11/51/children-7047124_1280.jpg" 
+                    alt="" 
+                    srcset=""
+                >
+            </li>
+            <li class="flex flex-row-reverse items-center gap-156">
+                <div>
+                    <h2>
+                        Our Vision
+                    </h2>
+                    <p>
+                        We believe in building innovative solutions that empower people and communities. Our vision is to bridge the gap between technology and everyday life by creating experiences that are intuitive, impactful, and sustainable.
+                    </p>
+                </div>
+                <img
+                    class="w-full aspect-[4/3] object-cover"
+                    src="https://cdn.pixabay.com/photo/2022/03/04/11/51/children-7047124_1280.jpg" 
+                    alt="" 
+                    srcset=""
+                >
+            </li>
+            <li class="flex items-center gap-156">
+                <div>
+                    <h2>
+                        Our Vision
+                    </h2>
+                    <p>
+                        We believe in building innovative solutions that empower people and communities. Our vision is to bridge the gap between technology and everyday life by creating experiences that are intuitive, impactful, and sustainable.
+                    </p>
+                </div>
+                <img
+                    class="w-full aspect-[4/3] object-cover"
+                    src="https://cdn.pixabay.com/photo/2022/03/04/11/51/children-7047124_1280.jpg" 
+                    alt="" 
+                    srcset=""
+                >
+            </li>
+        </ul>
+    </section>
+    <Schools/>
+    <CoreValues/>
 </Layout>
