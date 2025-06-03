@@ -4,6 +4,7 @@ on:
     branches: ["main"]
 jobs:
   build:
+    name: Build project
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,4 +16,19 @@ jobs:
           node-version: 22.x
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
+      - run: pnpm dedepe -check
       - run: pnpm build
+  check:
+    name: Check for type issues with astro check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: 'pnpm'
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm check
