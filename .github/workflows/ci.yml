@@ -16,7 +16,7 @@ jobs:
           node-version: 22.x
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
-      - run: pnpm dedepe -check
+      - run: pnpm dedupe -check
       - run: pnpm build
   check:
     name: Check for type issues with astro check
@@ -32,3 +32,9 @@ jobs:
           cache: 'pnpm'
       - run: pnpm i --frozen-lockfile
       - run: pnpm check
+  all-systems-pass:
+    needs: [check,build]
+    name: All systems pass
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
