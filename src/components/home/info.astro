@@ -56,6 +56,10 @@
         gap: 48px;
         align-items: center;
 
+        h2,p{
+            @apply max-md:text-center
+        }
+
         
         @media (width > 768px) {
             &:nth-of-type(2){
@@ -69,7 +73,10 @@
 
         img,div{
             flex: 1;
+            min-width: 0;
         }
+
+        img{max-width: 100%;}
     }
 
     .grid-section{
