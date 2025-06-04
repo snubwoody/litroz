@@ -1,0 +1,101 @@
+
+
+ <section class="py-32 md:py-96 px-24 md:px-64">
+    <ul class="space-y-56">
+        <li class="info-item">
+            <div>
+                <h2>Our Vision</h2>
+                <p>
+                    We believe in building innovative solutions that empower people and communities. Our vision is to bridge the gap between technology and everyday life by creating experiences that are intuitive, impactful, and sustainable.
+                </p>
+            </div>
+            <img
+                class="w-full aspect-[4/3] object-cover"
+                src="https://cdn.pixabay.com/photo/2022/03/04/11/51/children-7047124_1280.jpg" 
+                alt="" 
+                srcset=""
+            >
+        </li>
+        <li class="info-item">
+            <div>
+                <h2>What We Do</h2>
+                <p>
+                    From software development to design and strategy, our team tackles diverse challenges across industries. We blend creativity with technical expertise to deliver solutions that are not only functional but also delightful to use.
+                </p>
+            </div>
+            <img
+                class="w-full aspect-[4/3] object-cover"
+                src="https://cdn.pixabay.com/photo/2022/03/04/11/51/children-7047124_1280.jpg" 
+                alt="" 
+                srcset=""
+            >
+        </li>
+        <li class="info-item">
+            <div>
+                <h2>Get involved</h2>
+                <p>
+                    We're always looking for passionate individuals and collaborators. Whether you're a developer, designer, or someone with a bold idea, let's connect and explore how we can create something amazing together.
+                </p>
+            </div>
+            <img
+                class="w-full aspect-[4/3] object-cover"
+                src="https://cdn.pixabay.com/photo/2022/03/04/11/51/children-7047124_1280.jpg" 
+                alt="" 
+                srcset=""
+            >
+        </li>
+    </ul>
+</section>
+   
+
+<style>
+    @reference "../../styles/global.css";
+
+    .info-item{
+        display: flex;
+        gap: 48px;
+        align-items: center;
+
+        h2,p{
+            @apply max-md:text-center
+        }
+
+        
+        @media (width > 768px) {
+            &:nth-of-type(2){
+                flex-direction: row-reverse;
+            }
+        }
+
+        @media (width <= 768px) {
+            flex-direction: column-reverse;
+        }
+
+        img,div{
+            flex: 1;
+            min-width: 0;
+        }
+
+        img{max-width: 100%;}
+    }
+
+    .grid-section{
+        @apply flex flex-col-reverse md:grid md:grid-cols-2 justify-center;
+        /* display: grid; */
+        /* grid-template-columns: 1fr 1fr; */
+        row-gap: 88px;
+        column-gap: 24px;
+        align-items: center;
+
+        p{
+            max-width: 50ch;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 24px
+        }
+
+    }
+</style>
